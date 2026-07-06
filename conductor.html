@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel del Conductor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🚖 Uber Driver</h2>
+
+    <ul>
+        <li>🏠 Inicio</li>
+        <li>🚗 Viajes</li>
+        <li>⭐ Confiabilidad</li>
+        <li>⚠️ Penalizaciones</li>
+        <li>📋 Historial</li>
+        <li>⚙️ Configuración</li>
+    </ul>
+</div>
+
+<div class="contenido">
+
+    <h1>Panel del Conductor</h1>
+
+    <div class="cards">
+
+        <div class="card-info">
+
+    <h3>Puntaje de Confiabilidad</h3>
+
+    <div class="score" id="puntaje">
+        100
+    </div>
+
+    <div class="barra">
+
+        <div id="progreso"></div>
+
+    </div>
+
+    <p id="nivel">
+        Nivel: Bueno
+    </p>
+
+</div>
+
+        <div class="card-info">
+            <h3>Estado</h3>
+            <p class="activo">Cuenta Activa</p>
+        </div>
+
+        <div class="card-info">
+            <h3>Suspensión</h3>
+            <p>0 minutos</p>
+        </div>
+
+        <div class="card-info">
+            <h3>Cancelaciones</h3>
+            <p>3 registradas</p>
+        </div>
+
+    </div>
+
+    <div class="tarjeta">
+        <h2>Viaje Asignado</h2>
+
+        <p><strong>Pasajero:</strong> Juan Pérez</p>
+        <p><strong>Destino:</strong> Aeropuerto Internacional</p>
+
+        <button>Aceptar Viaje</button>
+        <button class="rojo">Cancelar Viaje</button>
+        <button onclick="penalizar()">
+Aplicar Cancelación
+</button>
+    </div>
+
+    <div class="tarjeta">
+        <h2>Código de Verificación</h2>
+        <div class="codigo">5829</div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>Historial de Penalizaciones</h2>
+
+        <table>
+
+            <tr>
+                <th>Fecha</th>
+                <th>Puntos</th>
+                <th>Suspensión</th>
+            </tr>
+
+            <tr>
+                <td>10/06/2026</td>
+                <td>-2</td>
+                <td>5 min</td>
+            </tr>
+
+            <tr>
+                <td>15/06/2026</td>
+                <td>-4</td>
+                <td>15 min</td>
+            </tr>
+
+            <tr>
+                <td>18/06/2026</td>
+                <td>-6</td>
+                <td>30 min</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
